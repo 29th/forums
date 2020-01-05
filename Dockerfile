@@ -31,5 +31,16 @@ RUN curl --silent --show-error --location \
 # Use default .htaccess file
 RUN cp .htaccess.dist .htaccess
 
+# Use modified default config file
+RUN cp conf/config-defaults.php conf/config.php \
+  && sed -i conf/config.php \
+    -e "s,\$Configuration\['Database'\]\['Host'\] = '.*',\$Configuration\['Database'\]\['Host'\] = getenv('DB_HOSTNAME')," \
+    -e "s,\$Configuration\['Database'\]\['Name'\] = '.*',\$Configuration\['Database'\]\['Name'\] = getenv('DB_DATABASE')," \
+    -e "s,\$Configuration\['Database'\]\['User'\] = '.*',\$Configuration\['Database'\]\['User'\] = getenv('DB_USERNAME')," \
+    -e "s,\$Configuration\['Database'\]\['Password'\] *= '.*',\$Configuration\['Database'\]\['Password'\] = getenv('DB_PASSWORD')," \
+    -e "s,\$Configuration\['Garden'\]\['Debug'\] = false,\$Configuration\['Debug'\] = getenv('ENVIRONMENT') == 'development'," \
+    -e "s,\$Configuration\['Garden'\]\['Cookie'\]\['Salt'\] = '.*',\$Configuration\['Garden'\]\['Cookie'\]\['Salt'\] = getenv('VANILLA_COOKIE_SALT')," \
+    -e "s,\$Configuration\['Garden'\]\['Installed'\] = false,\$Configuration\['Garden'\]\['Installed'\] = true,"
+
 # Set directories writable
 RUN chmod -R 777 conf cache uploads
