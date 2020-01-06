@@ -118,11 +118,11 @@ $Configuration['Garden']['Profile']['MaxWidth'] = 560;
 $Configuration['Garden']['Thumbnail']['Size'] = 200;
 
 // Appearance.
-$Configuration['Garden']['Theme'] = 'keystone';
+$Configuration['Garden']['Theme'] = 'bootstrap';
 $Configuration['Garden']['MobileTheme'] = 'mobile';
 $Configuration['Garden']['Menu']['Sort'] = ['Dashboard', 'Discussions', 'Questions', 'Activity', 'Applicants', 'Conversations', 'User'];
-$Configuration['Garden']['ThemeOptions']['Styles']['Key'] = 'Default';
-$Configuration['Garden']['ThemeOptions']['Styles']['Value'] = '%s_default';
+$Configuration['Garden']['ThemeOptions']['Styles']['Key'] = 'Military';
+$Configuration['Garden']['ThemeOptions']['Styles']['Value'] = '%s_military';
 $Configuration['Garden']['FavIcon'] = 'favicon_f06e9f5a2f7eb907.ico';
 $Configuration['Garden']['ShareImage'] = 'OS9LZL2PF3NE.png';
 $Configuration['Vanilla']['Discussions']['Layout'] = 'table';

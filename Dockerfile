@@ -39,3 +39,11 @@ COPY bootstrap.early.php conf/bootstrap.early.php
 
 # Set directories writable
 RUN chmod -R 777 conf cache uploads
+
+# Add theme
+RUN curl --silent --show-error --location \
+  --output bootstrap.zip \
+  "https://github.com/29th/vanilla-bootstrap/archive/master.zip" \
+  && unzip -q bootstrap.zip \
+  && rm bootstrap.zip \
+  && mv vanilla-bootstrap-master themes/bootstrap
