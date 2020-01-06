@@ -1,13 +1,14 @@
 FROM php:7.4.1-apache-buster
 
-ENV VANILLA_VERSION 2.8.4
+ENV VANILLA_VERSION 3.3
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
   unzip \
   libfreetype6-dev \
   libjpeg62-turbo-dev \
-  libpng-dev
+  libpng-dev \
+  libicu-dev
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
@@ -17,7 +18,8 @@ RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/Allo
   && a2enmod rewrite
 
 # Enable php mysql extension
-RUN docker-php-ext-install gd mysqli pdo pdo_mysql
+# TODO: Try using docker-php-ext-enable instead to save space if already installed
+RUN docker-php-ext-install gd mysqli pdo_mysql intl
 
 # Install vanilla
 RUN curl --silent --show-error --location \
