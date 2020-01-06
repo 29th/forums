@@ -19,10 +19,10 @@ $Configuration['ImageUpload']['Limits']['Height'] = '1400';
 
 // Database defaults.
 $Configuration['Database']['Engine'] = 'MySQL';
-$Configuration['Database']['Host'] = getenv('DB_HOSTNAME');
-$Configuration['Database']['Name'] = getenv('DB_DATABASE');
-$Configuration['Database']['User'] = getenv('DB_USERNAME');
-$Configuration['Database']['Password']  = getenv('DB_PASSWORD');
+// $Configuration['Database']['Host'] = 'dbhost';
+// $Configuration['Database']['Name'] = 'dbname';
+// $Configuration['Database']['User'] = 'dbuser';
+// $Configuration['Database']['Password']  = '';
 $Configuration['Database']['CharacterEncoding'] = 'utf8mb4';
 $Configuration['Database']['DatabasePrefix'] = 'GDN_';
 $Configuration['Database']['ExtendedProperties']['Collate'] = 'utf8mb4_unicode_ci';
@@ -56,16 +56,16 @@ $Configuration['Garden']['PrivateCommunity'] = false;
 $Configuration['Garden']['Forms']['HoneypotName'] = 'hpt';
 
 // Developer stuff.
-$Configuration['Garden']['Debug'] = getenv('DEBUG');
-$Configuration['Garden']['Errors']['LogFile'] = '';
+// $Configuration['Garden']['Debug'] = false;
+$Configuration['Garden']['Errors']['LogFile'] = 'php://stderr';
 $Configuration['Garden']['FolderBlacklist'] = ['.', '..', '_svn', '.git']; // Folders we should never search for classes.
 
 // User registration & authentication.
 $Configuration['Garden']['Session']['Length'] = '15 minutes';
-$Configuration['Garden']['Cookie']['Salt'] = getenv('VANILLA_COOKIE_SALT'); // We do this during setup, chill.
+// $Configuration['Garden']['Cookie']['Salt'] = ''; // We do this during setup, chill.
 $Configuration['Garden']['Cookie']['Name'] = 'Vanilla';
 $Configuration['Garden']['Cookie']['Path']  = '/';
-$Configuration['Garden']['Cookie']['Domain'] = getenv('VANILLA_COOKIE_DOMAIN');
+// $Configuration['Garden']['Cookie']['Domain'] = '';
 $Configuration['Garden']['Cookie']['HashMethod'] = 'md5'; // md5 or sha1
 $Configuration['Garden']['Authenticator']['DefaultScheme'] = 'password'; // Types include 'Password', 'Handshake', 'Openid'
 $Configuration['Garden']['Authenticator']['RegisterUrl'] = '/entry/register?Target=%2$s';
@@ -82,8 +82,6 @@ $Configuration['Garden']['Registration']['ConfirmEmail'] = true;
 $Configuration['Garden']['Registration']['ConfirmEmailRole'] = '3';
 $Configuration['Garden']['Registration']['MinPasswordLength'] = 6;
 $Configuration['Garden']['Registration']['NameUnique'] = true;
-$Configuration['Garden']['Registration']['CaptchaPrivateKey'] = getenv('VANILLA_CAPTCHA_PRIVATE_KEY');
-$Configuration['Garden']['Registration']['CaptchaPublicKey'] = getenv('VANILLA_CAPTCHA_PUBLIC_KEY');
 $Configuration['Garden']['TermsOfService'] = '/home/termsofservice'; // The url to the terms of service.
 $Configuration['Garden']['Password']['MinLength'] = 6;
 $Configuration['Garden']['Roles']['Manage'] = true; // @deprecated
@@ -92,18 +90,17 @@ $Configuration['Garden']['Roles']['Manage'] = true; // @deprecated
 $Configuration['Garden']['Security']['Hsts']['IncludeSubDomains'] = false;
 $Configuration['Garden']['Security']['Hsts']['Preload'] = false;
 $Configuration['Garden']['Security']['Hsts']['MaxAge'] = 604800;
-$Configuration['Garden']['UpdateToken'] = getenv('VANILLA_UPDATE_TOKEN');
 
 // Outgoing email.
 $Configuration['Garden']['Email']['UseSmtp'] = true;
-$Configuration['Garden']['Email']['SmtpHost'] = getenv('SMTP_HOSTNAME');
-$Configuration['Garden']['Email']['SmtpUser'] = getenv('SMTP_USERNAME');
-$Configuration['Garden']['Email']['SmtpPassword'] = getenv('SMTP_PASSWORD');
-$Configuration['Garden']['Email']['SmtpPort'] = getenv('SMTP_PORT');
-$Configuration['Garden']['Email']['SmtpSecurity'] = 'ssl'; // ssl/tls
+// $Configuration['Garden']['Email']['SmtpHost'] = '';
+// $Configuration['Garden']['Email']['SmtpUser'] = '';
+// $Configuration['Garden']['Email']['SmtpPassword'] = '';
+// $Configuration['Garden']['Email']['SmtpPort'] = '25';
+// $Configuration['Garden']['Email']['SmtpSecurity'] = ''; // ssl/tls
 $Configuration['Garden']['Email']['MimeType'] = 'text/plain';
-$Configuration['Garden']['Email']['SupportName'] = '29th ID';
-$Configuration['Garden']['Email']['SupportAddress'] = 'noreply@29th.org';
+// $Configuration['Garden']['Email']['SupportName'] = 'Support';
+// $Configuration['Garden']['Email']['SupportAddress'] = '';
 
 // Contact with the mothership.
 $Configuration['Garden']['UpdateCheckUrl'] = 'https://open.vanillaforums.com/addons/update';

@@ -35,6 +35,7 @@ RUN cp .htaccess.dist .htaccess
 
 # Use custom config file from version control
 COPY config.php conf/config.php
+COPY bootstrap.early.php conf/bootstrap.early.php
 
 # Set directories writable
 RUN chmod -R 777 conf cache uploads
