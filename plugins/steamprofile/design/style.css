@@ -1,0 +1,14 @@
+dt.SteamMemberSince { }
+dd.SteamMemberSince { }
+dt.SteamPlayedGame { text-align: center; }
+dd.SteamPlayedGame { }
+dt.SteamPlayingTime { }
+dd.SteamPlayingTime { }
+dt.SteamRating { }
+dd.SteamRating { }
+dt.SteamUpdated { }
+dd.SteamUpdated { }
+
+.SteamAvatar { text-align: center; }
+.SteamBasicInfo {  }
+.SteamProfile { }

@@ -12,6 +12,40 @@ $Configuration['EnabledPlugins']['rich-editor'] = true;
 $Configuration['EnabledPlugins']['recaptcha'] = true;
 $Configuration['EnabledPlugins']['GettingStarted'] = 'GettingStarted';
 
+// Custom plugins
+$Configuration['EnabledPlugins']['AddMenuitem'] = true;
+$Configuration['EnabledPlugins']['conversationSearch'] = true;
+$Configuration['EnabledPlugins']['ConversationsClearButton'] = true;
+$Configuration['EnabledPlugins']['ConversationsPreview'] = true;
+$Configuration['EnabledPlugins']['ConversationsUserSearch'] = true;
+$Configuration['EnabledPlugins']['DiscussionFiltersMenu'] = true;
+$Configuration['EnabledPlugins']['OnlineNow'] = true;
+$Configuration['EnabledPlugins']['Participated'] = true;
+$Configuration['EnabledPlugins']['PersonnelFiles'] = true;
+$Configuration['EnabledPlugins']['Signatures'] = true;
+$Configuration['EnabledPlugins']['Spoilers'] = true;
+$Configuration['EnabledPlugins']['steamprofile'] = true;
+$Configuration['EnabledPlugins']['UnreadOnIndex'] = true;
+
+// Plugin configuration
+$Configuration['Plugins']['AddMenuitem']['Name1'] = 'Donate';
+$Configuration['Plugins']['AddMenuitem']['Link1'] = 'http://29th.org/donate';
+$Configuration['Plugins']['AddMenuitem']['Name2'] = 'Search';
+$Configuration['Plugins']['AddMenuitem']['Link2'] = 'search';
+$Configuration['Plugins']['OnlineNow']['Frequency'] = '300';
+$Configuration['Plugins']['OnlineNow']['Location']['Show'] = 'every';
+$Configuration['Plugins']['OnlineNow']['Hide'] = '1';
+$Configuration['Plugins']['Signatures']['MaxNumberImages'] = '3';
+$Configuration['Plugins']['Signatures']['MaxLength'] = '200';
+$Configuration['Plugins']['Signatures']['HideGuest'] = '1';
+$Configuration['Plugins']['Signatures']['HideEmbed'] = '1';
+$Configuration['Plugins']['Signatures']['HideMobile'] = '1';
+$Configuration['Plugins']['Signatures']['AllowEmbeds'] = '1';
+$Configuration['Plugins']['Signatures']['Default']['MaxNumberImages'] = '3';
+$Configuration['Plugins']['Signatures']['Default']['MaxLength'] = '200';
+$Configuration['Plugins']['Signatures']['MaxImageHeight'] = '30';
+$Configuration['conversationSearch']['PerPage'] = 20;
+
 // ImageUpload
 $Configuration['ImageUpload']['Limits']['Enabled'] = false;
 $Configuration['ImageUpload']['Limits']['Width'] = '1000';

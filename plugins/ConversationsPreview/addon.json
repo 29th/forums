@@ -1,0 +1,16 @@
+{
+    "name": "Conversations Preview",
+    "description": "Adds a preview button to conversation messages.",
+    "version": "1.2",
+    "mobileFriendly": true,
+    "license": "GNU GPL2",
+    "gitHub": "bleistivt/conversationspreview",
+    "key": "conversationspreview",
+    "type": "addon",
+    "authors": [
+        {
+            "name": "Bleistivt",
+            "homepage": "http://bleistivt.net"
+        }
+    ]
+}

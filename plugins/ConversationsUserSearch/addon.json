@@ -1,0 +1,16 @@
+{
+    "name": "Conversations User Search",
+    "description": "Search for conversations by user",
+    "version": "1.0.2",
+    "mobileFriendly": true,
+    "license": "GNU GPL2",
+    "key": "conversationsusersearch",
+    "gitHub": "bleistivt/conversationsusersearch",
+    "type": "addon",
+    "authors": [
+        {
+            "name": "Bleistivt",
+            "homepage": "http://bleistivt.net"
+        }
+    ]
+}

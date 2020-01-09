@@ -47,3 +47,19 @@ RUN curl --silent --show-error --location \
   && unzip -q bootstrap.zip \
   && rm bootstrap.zip \
   && mv vanilla-bootstrap-master themes/bootstrap
+
+# Add plugins
+# TODO: Is there no way to do COPY plugins/* plugins/  ?
+COPY plugins/AddMenuitem plugins/AddMenuitem
+COPY plugins/ConversationsClearButton plugins/ConversationsClearButton
+COPY plugins/conversationSearch plugins/conversationsClearButton
+COPY plugins/ConversationsPreview plugins/ConversationsPreview
+COPY plugins/ConversationsUserSearch plugins/ConversationsUserSearch
+COPY plugins/DiscussionFiltersMenu plugins/DiscussionFiltersMenu
+COPY plugins/OnlineNow plugins/OnlineNow
+COPY plugins/Participated plugins/Participated
+COPY plugins/PersonnelFiles plugins/PersonnelFiles
+COPY plugins/Signatures plugins/Signatures
+COPY plugins/Spoilers plugins/Spoilers
+COPY plugins/steamprofile plugins/steamprofile
+COPY plugins/UnreadOnIndex plugins/UnreadOnIndex
