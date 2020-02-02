@@ -2,13 +2,28 @@ FROM php:7.4.1-apache-buster
 
 ENV VANILLA_VERSION 3.3
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-  unzip \
-  libfreetype6-dev \
-  libjpeg62-turbo-dev \
-  libpng-dev \
-  libicu-dev
+# Install system dependencies and php extensions
+RUN apt-get update \
+  && apt-get install -y \
+    # for composer
+    unzip \
+    # for intl extension
+    libicu-dev \
+    # for gd
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+  && docker-php-ext-configure gd --with-freetype --with-jpeg \
+  && docker-php-ext-install \
+    gd \
+    intl \
+    mysqli \
+    pdo_mysql \
+  # cleanup
+  && rm -rf \
+      /var/lib/apt/lists/* \
+      /usr/src/php/ext/* \
+      /tmp/*
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
@@ -16,10 +31,6 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 # Configure apache
 RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf \
   && a2enmod rewrite
-
-# Enable php mysql extension
-# TODO: Try using docker-php-ext-enable instead to save space if already installed
-RUN docker-php-ext-install gd mysqli pdo_mysql intl
 
 # Install vanilla
 RUN curl --silent --show-error --location \
