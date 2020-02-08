@@ -3,7 +3,7 @@
 class ConversationsPreviewPlugin extends Gdn_Plugin {
 
     public function messagesController_render_before($sender) {
-        $sender->addJsFile('preview.js', 'plugins/conversationspreview');
+        $sender->addJsFile('preview.js', 'plugins/ConversationsPreview');
         $sender->addDefinition('conversationsPreview.preview', t('Preview'));
         $sender->addDefinition('conversationsPreview.edit', t('Edit'));
     }
