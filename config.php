@@ -20,6 +20,7 @@ $Configuration['EnabledPlugins']['ConversationsClearButton'] = true;
 $Configuration['EnabledPlugins']['ConversationsPreview'] = true;
 $Configuration['EnabledPlugins']['ConversationsUserSearch'] = true;
 $Configuration['EnabledPlugins']['DiscussionFiltersMenu'] = true;
+$Configuration['EnabledPlugins']['MentionsPlus'] = true;
 $Configuration['EnabledPlugins']['OnlineNow'] = true;
 $Configuration['EnabledPlugins']['Participated'] = true;
 $Configuration['EnabledPlugins']['PersonnelFiles'] = true;
