@@ -1,0 +1,22 @@
+{
+  "name": "assets",
+  "private": true,
+  "devDependencies": {
+    "bower": "*",
+    "wiredep": "*",
+    "gulp": "*",
+    "gulp-load-plugins": "*",
+    "gulp-plumber": "0.6.1",
+    "gulp-size": "*",
+    "gulp-livereload": "*",
+    "gulp-concat": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "install": "bower install",
+    "build": "gulp",
+    "watch": "gulp watch"
+  }
+}

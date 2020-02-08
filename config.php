@@ -14,6 +14,7 @@ $Configuration['EnabledPlugins']['GettingStarted'] = 'GettingStarted';
 
 // Custom plugins
 $Configuration['EnabledPlugins']['AddMenuitem'] = true;
+$Configuration['EnabledPlugins']['bootstrapmarkdown'] = true;
 $Configuration['EnabledPlugins']['conversationSearch'] = true;
 $Configuration['EnabledPlugins']['ConversationsClearButton'] = true;
 $Configuration['EnabledPlugins']['ConversationsPreview'] = true;

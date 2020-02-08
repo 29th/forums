@@ -1,0 +1,15 @@
+{
+  "name": "assets",
+  "private": true,
+  "dependencies": {
+    "bootstrap-markdown": "2.7.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": []
+    },
+    "jquery": {
+      "main": []
+    }
+  }
+}
