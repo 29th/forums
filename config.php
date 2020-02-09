@@ -175,7 +175,7 @@ $Configuration['Garden']['Embed']['CommentsPerPage'] = 50;
 $Configuration['Garden']['Embed']['SortComments'] = 'desc';
 $Configuration['Garden']['Embed']['PageToForum'] = true;
 $Configuration['Garden']['SignIn']['Popup'] = true; // Should the sign-in link pop up or go to it's own page? (SSO requires going to it's own external page)
-$Configuration['Garden']['TrustedDomains'] = array('personnel.29th.org');
+// $Configuration['Garden']['TrustedDomains'] = '';
 
 // User experience & formatting.
 $Configuration['Garden']['InputFormatter'] = 'Markdown'; // Html, BBCode, Markdown, Text, Rich

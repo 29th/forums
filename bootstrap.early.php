@@ -28,4 +28,6 @@ if (c('Garden.Installed')) {
 
     saveToConfig('Garden.Registration.CaptchaPrivateKey', getenv('CAPTCHA_PRIVATE_KEY'), false);
     saveToConfig('Garden.Registration.CaptchaPublicKey', getenv('CAPTCHA_PUBLIC_KEY'), false);
+
+    saveToConfig('Garden.TrustedDomains', getenv('PERSONNEL_HOST_NAME'), false);
 }
