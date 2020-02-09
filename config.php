@@ -159,6 +159,7 @@ $Configuration['Garden']['ThemeOptions']['Styles']['Key'] = 'Military';
 $Configuration['Garden']['ThemeOptions']['Styles']['Value'] = '%s_military';
 $Configuration['Garden']['FavIcon'] = 'favicon_f06e9f5a2f7eb907.ico';
 $Configuration['Garden']['ShareImage'] = 'OS9LZL2PF3NE.png';
+$Configuration['Garden']['DefaultAvatar'] = 'defaultavatar/154KLUS2L8EB.jpg';
 $Configuration['Vanilla']['Discussions']['Layout'] = 'table';
 $Configuration['Vanilla']['Categories']['Layout'] = 'table';
 
