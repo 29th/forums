@@ -37,15 +37,13 @@ $Configuration['Plugins']['AddMenuitem']['Link2'] = 'search';
 $Configuration['Plugins']['OnlineNow']['Frequency'] = '300';
 $Configuration['Plugins']['OnlineNow']['Location']['Show'] = 'every';
 $Configuration['Plugins']['OnlineNow']['Hide'] = '1';
-$Configuration['Plugins']['Signatures']['MaxNumberImages'] = '3';
-$Configuration['Plugins']['Signatures']['MaxLength'] = '200';
-$Configuration['Plugins']['Signatures']['HideGuest'] = '1';
-$Configuration['Plugins']['Signatures']['HideEmbed'] = '1';
-$Configuration['Plugins']['Signatures']['HideMobile'] = '1';
-$Configuration['Plugins']['Signatures']['AllowEmbeds'] = '1';
-$Configuration['Plugins']['Signatures']['Default']['MaxNumberImages'] = '3';
-$Configuration['Plugins']['Signatures']['Default']['MaxLength'] = '200';
-$Configuration['Plugins']['Signatures']['MaxImageHeight'] = '30';
+$Configuration['Signatures']['Images']['MaxNumber'] = '3';
+$Configuration['Signatures']['Images']['MaxHeight'] = '30';
+$Configuration['Signatures']['Hide']['Guest'] = '1';
+$Configuration['Signatures']['Hide']['Embed'] = '1';
+$Configuration['Signatures']['Hide']['Mobile'] = '1';
+$Configuration['Signatures']['Allow']['Embeds'] = '1';
+$Configuration['Signatures']['Text']['MaxLength'] = '200';
 $Configuration['conversationSearch']['PerPage'] = 20;
 
 // ImageUpload
