@@ -26,7 +26,6 @@ $Configuration['EnabledPlugins']['Participated'] = true;
 $Configuration['EnabledPlugins']['PersonnelFiles'] = true;
 $Configuration['EnabledPlugins']['Signatures'] = true;
 $Configuration['EnabledPlugins']['Spoilers'] = true;
-$Configuration['EnabledPlugins']['steamprofile'] = true;
 $Configuration['EnabledPlugins']['UnreadOnIndex'] = true;
 
 // Plugin configuration
