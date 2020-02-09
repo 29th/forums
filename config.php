@@ -220,7 +220,7 @@ $Configuration['Modules']['Conversations']['Content'] = ['MessageModule', 'MeMod
 
 // Routes.
 $Configuration['Routes']['DefaultController'] = 'categories';
-$Configuration['Routes']['DefaultForumRoot'] = 'categories';
+$Configuration['Routes']['DefaultForumRoot'] = 'discussions';
 $Configuration['Routes']['Default404'] = ['dashboard/home/filenotfound', 'NotFound'];
 $Configuration['Routes']['DefaultPermission'] = ['dashboard/home/unauthorized', 'NotAuthorized'];
 $Configuration['Routes']['UpdateMode'] = 'dashboard/home/updatemode';
