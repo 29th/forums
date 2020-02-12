@@ -14,6 +14,7 @@ $Configuration['EnabledPlugins']['GettingStarted'] = 'GettingStarted';
 
 // Custom plugins
 $Configuration['EnabledPlugins']['AddMenuitem'] = true;
+$Configuration['EnabledPlugins']['AllViewed'] = true;
 $Configuration['EnabledPlugins']['bootstrapmarkdown'] = true;
 $Configuration['EnabledPlugins']['conversationSearch'] = true;
 $Configuration['EnabledPlugins']['ConversationsClearButton'] = true;
@@ -24,6 +25,8 @@ $Configuration['EnabledPlugins']['MentionsPlus'] = true;
 $Configuration['EnabledPlugins']['OnlineNow'] = true;
 $Configuration['EnabledPlugins']['Participated'] = true;
 $Configuration['EnabledPlugins']['PersonnelFiles'] = true;
+$Configuration['EnabledPlugins']['ProfileExtender'] = true;
+$Configuration['EnabledPlugins']['Quotes'] = true;
 $Configuration['EnabledPlugins']['Signatures'] = true;
 $Configuration['EnabledPlugins']['Spoilers'] = true;
 $Configuration['EnabledPlugins']['UnreadOnIndex'] = true;
@@ -217,6 +220,14 @@ $Configuration['Modules']['Vanilla']['Panel'] = ['MeModule', 'UserBoxModule', 'G
 $Configuration['Modules']['Vanilla']['Content'] = ['MessageModule', 'MeModule', 'UserBoxModule', 'NewDiscussionModule', 'ProfileOptionsModule', 'Notices', 'NewConversationModule', 'NewDiscussionModule', 'DiscussionFilterModule', 'CategoryModeratorsModule', 'Content', 'Ads'];
 $Configuration['Modules']['Conversations']['Panel'] = ['MeModule', 'UserBoxModule', 'NewConversationModule', 'SignedInModule', 'GuestModule', 'Ads'];
 $Configuration['Modules']['Conversations']['Content'] = ['MessageModule', 'MeModule', 'UserBoxModule', 'NewConversationModule', 'Notices', 'Content', 'Ads'];
+
+// ProfileExtender
+$Configuration['ProfileExtender']['Fields']['DateOfBirth']['FormType'] = 'DateOfBirth';
+$Configuration['ProfileExtender']['Fields']['DateOfBirth']['Label'] = 'DateOfBirth';
+$Configuration['ProfileExtender']['Fields']['DateOfBirth']['Options'] = '';
+$Configuration['ProfileExtender']['Fields']['DateOfBirth']['OnRegister'] = '1';
+$Configuration['ProfileExtender']['Fields']['DateOfBirth']['OnProfile'] = '1';
+$Configuration['ProfileExtender']['Fields']['DateOfBirth']['Required'] = false;
 
 // Routes.
 $Configuration['Routes']['DefaultController'] = 'categories';
