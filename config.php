@@ -188,6 +188,8 @@ $Configuration['Garden']['Format']['Hashtags'] = false;
 $Configuration['Garden']['Format']['YouTube'] = true;
 $Configuration['Garden']['Format']['Vimeo'] = true;
 $Configuration['Garden']['Format']['EmbedSize'] = 'normal'; // tiny/small/normal/big/huge or WIDTHxHEIGHT
+$Configuration['Vanilla']['Comment']['MaxLength'] = '16000';
+$Configuration['Vanilla']['Comment']['MinLength'] = '2';
 
 // Default preferences. Setting these to 'false' disables them globally.
 $Configuration['Preferences']['Email']['ConversationMessage'] = '1';
