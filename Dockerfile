@@ -61,7 +61,3 @@ RUN curl --silent --show-error --location \
 
 # Add plugins
 COPY plugins plugins
-
-# Entrypoint script to support heroku $PORT env var at runtime
-COPY run-apache2.sh /usr/local/bin
-CMD [ "run-apache2.sh" ]
