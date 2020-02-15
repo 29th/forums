@@ -26,8 +26,8 @@ if (c('Garden.Installed')) {
     saveToConfig('Garden.Email.SmtpPort', getenv('MAIL_SMTP_PORT'), false);
     saveToConfig('Garden.Email.SmtpSecurity', getenv('MAIL_SMTP_SECURITY'), false);
 
-    saveToConfig('Garden.Registration.CaptchaPrivateKey', getenv('CAPTCHA_PRIVATE_KEY'), false);
-    saveToConfig('Garden.Registration.CaptchaPublicKey', getenv('CAPTCHA_PUBLIC_KEY'), false);
+    saveToConfig('Recaptcha.PrivateKey', getenv('CAPTCHA_PRIVATE_KEY'), false);
+    saveToConfig('Recaptcha.PublicKey', getenv('CAPTCHA_PUBLIC_KEY'), false);
 
     saveToConfig('Garden.TrustedDomains', getenv('PERSONNEL_HOST_NAME'), false);
 }
