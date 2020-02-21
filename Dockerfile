@@ -44,6 +44,11 @@ RUN curl --silent --show-error --location \
 # Use default .htaccess file
 RUN cp .htaccess.dist .htaccess
 
+# Fix API access token bug
+# Temporary fix until https://github.com/vanilla/vanilla/pull/10092 is merged/resolved
+RUN echo '\n\nSetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1' \
+  >> .htaccess
+
 # Use custom config file from version control
 COPY config.php conf/config.php
 COPY bootstrap.early.php conf/bootstrap.early.php
