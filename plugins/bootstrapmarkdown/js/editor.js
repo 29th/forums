@@ -1390,6 +1390,8 @@
 
     $textarea.markdown({
       iconlibrary: 'fa'
+    , resize: 'vertical'
+    , height: 250
     , hiddenButtons: [
         'cmdPreview'
       ]

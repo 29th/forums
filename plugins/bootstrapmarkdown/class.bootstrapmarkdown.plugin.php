@@ -33,6 +33,7 @@ class BootstrapMarkdownPlugin extends Gdn_Plugin {
 
     // Remove jQuery Autogrow as it interferes with the editor
     Gdn::controller()->removeJsFile('jquery.autogrow.js');
+    Gdn::controller()->removeJsFile('jquery.autosize.min.js');
 
     // Add the assets we need for the editor
     Gdn::controller()->addCssFile($this->getResource('design/editor.css', false, false));
