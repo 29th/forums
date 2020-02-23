@@ -1,7 +1,7 @@
 <?php if (!defined('APPLICATION')) exit();
 
 class PersonnelFileModel extends Gdn_Model {
-    const APIBaseURL = 'http://api.29th.org';
+    const APIBaseURL = 'https://api.29th.org';
     const APIMembersResource = '/members/view';
     
     public function GetByID($ForumMemberID) {
@@ -10,7 +10,7 @@ class PersonnelFileModel extends Gdn_Model {
         if($response) {
             $data = json_decode($response, TRUE);
         
-            if($data['status'] == TRUE) {
+            if($data['status'] == TRUE && $data['member']['id']) {
                 return $data['member'];
             }
         }
