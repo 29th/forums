@@ -1,0 +1,20 @@
+{
+    "name": "Unread on Index",
+    "description": "Show new/unread tags on category index.",
+    "version": "1.1.0",
+    "hasLocale": false,
+    "license": "MIT",
+    "key": "UnreadOnIndex",
+    "type": "addon",
+    "authors": [
+        {
+            "name": "Wilson29thID",
+            "homepage": "https://www.29th.org"
+        }
+    ],
+    "require": {
+        "vanilla": ">=2.5"
+    },
+    "icon": "UnreadOnIndex.png"
+  }
+  
