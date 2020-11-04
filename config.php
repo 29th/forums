@@ -45,7 +45,7 @@ $Configuration['Signatures']['Hide']['Guest'] = '1';
 $Configuration['Signatures']['Hide']['Embed'] = '1';
 $Configuration['Signatures']['Hide']['Mobile'] = '1';
 $Configuration['Signatures']['Allow']['Embeds'] = '1';
-$Configuration['Signatures']['Text']['MaxLength'] = '200';
+$Configuration['Signatures']['Text']['MaxLength'] = '400';
 $Configuration['conversationSearch']['PerPage'] = 20;
 
 // ImageUpload
