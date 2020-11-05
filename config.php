@@ -30,6 +30,7 @@ $Configuration['EnabledPlugins']['Quotes'] = true;
 $Configuration['EnabledPlugins']['Signatures'] = true;
 $Configuration['EnabledPlugins']['Spoilers'] = true;
 $Configuration['EnabledPlugins']['UnreadOnIndex'] = true;
+$Configuration['EnabledPlugins']['AddRegistrationQuestion'] = true;
 
 // Plugin configuration
 $Configuration['Plugins']['AddMenuitem']['Name1'] = 'Donate';
@@ -47,6 +48,9 @@ $Configuration['Signatures']['Hide']['Mobile'] = '1';
 $Configuration['Signatures']['Allow']['Embeds'] = '1';
 $Configuration['Signatures']['Text']['MaxLength'] = '400';
 $Configuration['conversationSearch']['PerPage'] = 20;
+$Configuration['AddRegistrationQuestion']['Question'] = '3+7=';
+$Configuration['AddRegistrationQuestion']['Answer'] = '10';
+$Configuration['AddRegistrationQuestion']['Basic'] = '';
 
 // ImageUpload
 $Configuration['ImageUpload']['Limits']['Enabled'] = false;
