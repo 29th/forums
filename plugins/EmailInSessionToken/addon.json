@@ -1,0 +1,18 @@
+{
+  "name": "Email In Session Token",
+  "description": "Adds email address to session token",
+  "version": "1.0",
+  "hasLocale": false,
+  "license": "MIT",
+  "key": "EmailInSessionToken",
+  "type": "addon",
+  "authors": [
+    {
+      "name": "Wilson29thID",
+      "homepage": "https://www.29th.org"
+    }
+  ],
+  "require": {
+    "vanilla": ">=2.5"
+  }
+}
