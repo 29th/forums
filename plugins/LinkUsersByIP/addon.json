@@ -1,0 +1,18 @@
+{
+  "name": "Link Users By IP",
+  "description": "Identify related users by IP address",
+  "version": "1.0",
+  "hasLocale": false,
+  "license": "MIT",
+  "key": "LinkUsersByIP",
+  "type": "addon",
+  "authors": [
+    {
+      "name": "Wilson29thID",
+      "homepage": "https://www.29th.org"
+    }
+  ],
+  "require": {
+    "vanilla": ">=2.5"
+  }
+}
